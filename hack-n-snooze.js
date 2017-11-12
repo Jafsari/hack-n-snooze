@@ -1,7 +1,8 @@
 $(function() {
 
+$('#SUBMIT').click(function() {
+  $('#new-post').show()
 });
-
 // listen for a submit event on a form
 $('#new-post').on('submit', function(e) {
 	e.preventDefault() // do not refresh the page
@@ -13,8 +14,10 @@ $('#new-post').on('submit', function(e) {
   if (nextTitle.length === 0) return 0
   if (url.length === 0) return 0
   
-
+  $('#new-post').slideUp()
   $('ul').append('<li>' + nextTitle + ' ' + '(' + url + ')' + "</li>") 
 
+
+  });
 
 });
