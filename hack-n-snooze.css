@@ -49,3 +49,7 @@ h3 {
 	position: relative;
 	left: 112px;
 }
+
+ol {
+	list-style: none;
+}
